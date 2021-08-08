@@ -1,136 +1,148 @@
 <template>
-    <div id="home">
-        <nav-bar class="home-nav"><div slot="center">购物街</div></nav-bar>
-        <home-swiper :banners="banners" />
-        <recommend-view :recommends="recommends" />
-        <feature-view></feature-view>
-        <ul>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-        </ul>
-    </div>
-    
+  <div id="home">
+    <nav-bar class="home-nav"><div slot="center">购物街</div></nav-bar>
+    <home-swiper :banners="banners" />
+    <recommend-view :recommends="recommends" />
+    <feature-view></feature-view>
+    <tab-control class="tab-control" :titles="['流行', '新款', '精选']" />
+    <ul>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+      <li>列表</li>
+    </ul>
+  </div>
 </template>
 <script>
 import NavBar from "../../components/common/navbar/NavBar";
-import HomeSwiper from './childComps/HomeSwiper'
+import TabControl from "../../components/content/tabControl/TabControl";
+
+import HomeSwiper from "./childComps/HomeSwiper";
+import RecommendView from "./childComps/RecommendView";
+import FeatureView from "./childComps/FeatureView";
+
 import { getHomeMultidata } from "../../network/home";
-import RecommendView from './childComps/RecommendView';
-import FeatureView from './childComps/FeatureView'
+// import TabControl from '../../components/content/tabControl/TabControl.vue';
 // import FeatureView from './childComps/FeatureView.vue';
 
 export default {
   name: "Home",
   components: {
     NavBar,
+    TabControl,
     HomeSwiper,
     RecommendView,
-    FeatureView
+    FeatureView,
+    // TabControl,
+
     // FeatureView
   },
   data() {
     return {
       banners: [],
-      recommends: []
-    }
+      recommends: [],
+      goods: {
+        pop: { page: 0, list: [] },
+        news: { page: 0, list: [] },
+        sell: { page: 0, list: [] },
+      },
+    };
   },
   created() {
     getHomeMultidata().then((res) => {
@@ -142,8 +154,8 @@ export default {
 </script>
 
 <style scoped>
-#home{
-  padding-top: 44px; 
+#home {
+  padding-top: 44px;
 }
 
 .home-nav {
@@ -154,5 +166,10 @@ export default {
   right: 0;
   top: 0;
   z-index: 9;
+}
+.tab-control {
+  position: sticky;
+  top: 44px;
+  background-color: #fff;
 }
 </style>
